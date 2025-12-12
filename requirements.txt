@@ -1,0 +1,27 @@
+# Core Python utilities
+numpy
+pandas
+scipy
+
+# Visualization
+matplotlib
+seaborn
+
+# Machine Learning
+scikit-learn
+xgboost
+lightgbm
+
+# Notebook environment
+jupyter
+notebook
+ipykernel
+
+# Data validation & linting
+flake8
+black
+nbqa
+nbconvert
+
+# Markdown linting
+mdformat
