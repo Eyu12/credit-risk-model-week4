@@ -24,4 +24,4 @@ nbqa
 nbconvert
 
 # Markdown linting
-mdformat
+mdformat 
