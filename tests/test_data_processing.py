@@ -6,9 +6,10 @@ import sys
 import os
 
 # Add src directory to path
-sys.path.append(os.path.join(os.path.dirname(__file__), '../src'))
+project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, project_root)
 
-from data_processing import (
+from src.data_processing import (
     DateTimeFeatureExtractor,
     CustomerAggregateFeatures,
     DataProcessor
@@ -77,7 +78,7 @@ class TestDataProcessing(unittest.TestCase):
     
     def test_negative_amount_patterns(self):
         """Test negative amount (fee) pattern detection"""
-        from data_processing import NegativeAmountPatterns
+        from src.data_processing import NegativeAmountPatterns
         
         transformer = NegativeAmountPatterns()
         transformer.fit(self.sample_data)
