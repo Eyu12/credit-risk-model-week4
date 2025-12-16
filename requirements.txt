@@ -1,27 +1,61 @@
-# Core Python utilities
-numpy
+# Updated requirements.txt with deployment dependencies
+
+# Core data science
 pandas
+numpy
 scipy
+
+# Scikit-learn
+scikit-learn
+imbalanced-learn
+
+# MLflow for experiment tracking
+mlflow
+
+# Model libraries
+xgboost
+lightgbm
+
+# API and deployment
+fastapi
+uvicorn
+pydantic
+python-multipart
+
+# Model serving
+joblib
+pickleshare
+
+# Testing
+pytest
+pytest-cov
+pytest-asyncio
+
+# Code quality and linting
+flake8
+black
+isort
+mypy
+pre-commit
+
+# Feature engineering
+category-encoders
+feature-engine
 
 # Visualization
 matplotlib
 seaborn
+plotly
 
-# Machine Learning
-scikit-learn
-xgboost
-lightgbm
+# Model explainability
+shap
+lime
 
-# Notebook environment
-jupyter
-notebook
-ipykernel
+# Utilities
+python-dotenv
+python-dateutil
+pyarrow
+tqdm
 
-# Data validation & linting
-flake8
-black
-nbqa
-nbconvert
-
-# Markdown linting
-mdformat 
+# Security
+cryptography
